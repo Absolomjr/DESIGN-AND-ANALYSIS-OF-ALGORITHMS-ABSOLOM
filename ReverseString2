@@ -1,0 +1,13 @@
+##This is where i made use of a data-structure in python
+
+def reverse_string(s):
+    stack = list(s)  # Using list as a stack
+    reversed_str = ""
+    while stack:
+        reversed_str += stack.pop()  # Pop from the end (LIFO)
+    return reversed_str
+
+# Example usage
+string = "Hello, World!"
+reversed_string = reverse_string(string)
+print(reversed_string)  # Output: !dlroW ,olleH
